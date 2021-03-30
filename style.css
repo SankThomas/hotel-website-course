@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -98,6 +102,50 @@ body {
   line-height: 1;
 }
 
+/* Book Now section */
+.book-now {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.book-now h2 {
+  margin-bottom: 20px;
+}
+
+.book-now .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.book-now .btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+/* Conference center */
+.conference-center {
+  padding: 0 0 50px 0;
+}
+
+.conference-center .description {
+  padding: 10px 20px 0;
+}
+
+.conference-center .description h2 {
+  margin-bottom: 10px;
+}
+
+.conference-center .description ul li {
+  margin: 5px 0;
+}
+
 @media (min-width: 640px) {
   .showcase .overlay h1 {
     font-size: 36px;
@@ -112,6 +160,14 @@ body {
   .showcase .overlay p {
     font-size: 17px;
   }
+
+  .book-now h2 {
+    font-size: 36px;
+  }
+
+  .book-now .btn {
+    padding: 20px 60px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -120,6 +176,19 @@ body {
   }
 
   .showcase .overlay p {
+    font-size: 18px;
+  }
+
+  .conference-center {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .conference-center h2 {
+    font-size: 46px;
+  }
+
+  .conference-center .description ul li {
     font-size: 18px;
   }
 }
