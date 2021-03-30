@@ -242,6 +242,38 @@ body {
 /* Offers */
 .offers {
   padding: 50px 0;
+  margin: 0 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer ul {
+  margin-top: 30px;
+}
+
+.footer ul li {
+  margin: 10px 0;
+}
+
+.footer ul.social {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer ul.social li {
+  margin: 0 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
@@ -270,6 +302,25 @@ body {
 
   .book-now .btn {
     padding: 20px 60px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer ul {
+    margin: 0;
+    display: flex;
+  }
+
+  .footer ul li {
+    margin: 0 10px;
+  }
+
+  .footer ul.social {
+    align-items: initial;
+    margin: 0;
   }
 }
 
