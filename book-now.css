@@ -1,0 +1,66 @@
+.book-now-page {
+  background: url("./images/room-9.jpg") no-repeat center/cover;
+  height: 500px;
+}
+
+.book-now-page .overlay {
+  height: 500px;
+}
+
+.book-form {
+  padding: 50px 20px;
+}
+
+.book-form .form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.book-form .form input,
+.book-form .form select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.book-form .form select {
+  margin-bottom: 30px;
+}
+
+.book-form .form label {
+  margin-top: 20px;
+  display: block;
+}
+
+.book-form .form .check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .book-form .form {
+    max-width: 700px;
+  }
+
+  .book-form .form .names,
+  .book-form .form .dates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .book-form .form .names input,
+  .book-form .form .dates input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-form {
+    padding: 150px 20px;
+  }
+}
