@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a hotel website that we built in the Udemy Course"
+    />
+    <meta name="keywords" content="Hotel website, Hotel Management System" />
+    <meta name="author" content="Thomas Sankara" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="book-now.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Hotel Website | Book Now</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <h2>
+          <span>Tsb</span>
+          Hotels
+        </h2>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="book-now-btn">
+        <a href="./book-now.html" class="btn">Book Now</a>
+      </div>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Showcase -->
+    <section class="showcase book-now-page">
+      <div class="overlay">
+        <h1>Reserve Your Room</h1>
+        <div class="header-underline"></div>
+      </div>
+    </section>
+
+    <!-- Book Now Form -->
+    <section class="book-form">
+      <h2 style="text-align: center; margin-bottom: 30px">
+        Fill in the form to make your reservation
+      </h2>
+      <form class="form">
+        <div class="names">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Enter your first name"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Enter your last name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">* We need your email to send an invoice</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <div class="dates">
+          <p>
+            <label for="date">Enter your arrival date</label>
+            <input type="date" name="check-in-date" id="checkIn" required />
+          </p>
+          <p>
+            <label for="date">Enter your check out date</label>
+            <input type="date" name="check-out-date" id="checkOut" required />
+          </p>
+        </div>
+
+        <div class="check">
+          <label for="checkbox">Pets?</label>
+          <input type="checkbox" name="checkBox" id="checkBox" />
+        </div>
+
+        <div class="select">
+          <select name="select" id="select">
+            <option value="Single Room">Single Room</option>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Double Deluxe Room" selected>
+              Double Deluxe Room
+            </option>
+            <option value="Presidential">Presidential Room</option>
+            <option value="Penthouse">Penthouse</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-offer">Make my reservation</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="logo">
+        <h2>
+          <span>Tsb</span>
+          Hotels
+        </h2>
+      </div>
+
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact-us">Contact Us</a></li>
+      </ul>
+
+      <ul class="social">
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-pinterest"></i></li>
+      </ul>
+    </footer>
+  </body>
+</html>
