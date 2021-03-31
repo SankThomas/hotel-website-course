@@ -32,7 +32,8 @@ h6 {
 
 p,
 input,
-button {
+button,
+label {
   font-family: "Catamaran", sans-serif;
 }
 
